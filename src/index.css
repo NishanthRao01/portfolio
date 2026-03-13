@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  
+  --color-background: var(--color-zinc-950);
+  --color-foreground: var(--color-zinc-50);
+  --color-primary: var(--color-emerald-500);
+  --color-muted: var(--color-zinc-400);
+  --color-border: var(--color-zinc-800);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply antialiased selection:bg-emerald-500/30 selection:text-emerald-200;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}

@@ -6,7 +6,7 @@ interface TechBadgeProps {
 
 const TechBadge: React.FC<TechBadgeProps> = ({ label }) => {
   return (
-    <span className="inline-flex items-center rounded-full border border-zinc-800 px-2.5 py-0.5 text-[11px] font-medium text-zinc-300">
+    <span className="inline-flex items-center rounded-full bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 text-xs font-semibold text-emerald-400">
       {label}
     </span>
   );

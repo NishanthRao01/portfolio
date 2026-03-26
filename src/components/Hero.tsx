@@ -66,13 +66,13 @@ const Hero: React.FC = () => {
   return (
     <section id="hero" className="flex flex-col items-start justify-center min-h-[90vh] gap-8 relative">
       {/* Dynamic blurred element */}
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           scale: [1, 1.2, 1],
           opacity: [0.1, 0.2, 0.1],
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-emerald-500 blur-[120px] rounded-full point-events-none -z-10" 
+        className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-emerald-500 blur-[120px] rounded-full point-events-none -z-10"
       />
 
       <motion.div
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-zinc-50 tracking-tighter mb-4">
           Nishanth Rao.
         </h1>
-        
+
         {/* Staggered Word Reveal */}
         <motion.div
           className="flex flex-wrap text-4xl md:text-6xl font-black tracking-tighter mb-8 text-zinc-500"
@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
         </motion.div>
       </motion.div>
 
-      <motion.p 
+      <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
@@ -113,7 +113,7 @@ const Hero: React.FC = () => {
         I'm a Full-Stack Engineer who ships backend-heavy applications. I enjoy designing REST APIs, modeling complex data, and resolving performance bottlenecks to create seamless user experiences.
       </motion.p>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
@@ -131,7 +131,7 @@ const Hero: React.FC = () => {
         </MagneticButton>
 
         <MagneticButton
-          href="/Nishanth-Rao-Annam-Resume.pdf"
+          href="/NishanthCV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold tracking-wide uppercase rounded-full border border-zinc-700 bg-transparent text-zinc-300 hover:text-zinc-50 hover:border-emerald-500/50 hover:bg-emerald-500/10 transition-all duration-300"
@@ -141,7 +141,7 @@ const Hero: React.FC = () => {
         </MagneticButton>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
@@ -150,10 +150,10 @@ const Hero: React.FC = () => {
         <a href="https://github.com/NishanthRao01" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-emerald-400 hover:-translate-y-1 transition-all">
           <Github className="w-6 h-6" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-emerald-400 hover:-translate-y-1 transition-all">
+        <a href="https://www.linkedin.com/in/nishanthraoannam/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-emerald-400 hover:-translate-y-1 transition-all">
           <Linkedin className="w-6 h-6" />
         </a>
-        <a href="mailto:nishanthrao@example.com" aria-label="Email" className="hover:text-emerald-400 hover:-translate-y-1 transition-all">
+        <a href="mailto:nishanthraoannam@gmail.com" aria-label="Email" className="hover:text-emerald-400 hover:-translate-y-1 transition-all">
           <Mail className="w-6 h-6" />
         </a>
       </motion.div>

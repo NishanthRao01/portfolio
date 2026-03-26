@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import CustomCursor from "./components/CustomCursor";
+import Certificates from "./components/Certificates";
 
 const App: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -44,6 +45,7 @@ const App: React.FC = () => {
           <nav className="hidden md:flex gap-8 text-sm font-semibold text-zinc-400">
             <a href="#projects" className="hover:text-emerald-400 transition-colors">Projects</a>
             <a href="#experience" className="hover:text-emerald-400 transition-colors">Experience</a>
+            <a href="#certificates" className="hover:text-emerald-400 transition-colors">Certificates</a>
             <a href="#about" className="hover:text-emerald-400 transition-colors">About</a>
           </nav>
         </div>
@@ -56,6 +58,7 @@ const App: React.FC = () => {
           <SystemDesign />
           <Skills />
           <Experience />
+          <Certificates />
           <About />
           <Contact />
         </main>

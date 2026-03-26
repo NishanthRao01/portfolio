@@ -5,25 +5,25 @@ import SectionHeader from "./SectionHeader";
 
 const certificates = [
   {
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "Aug 2024",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop",
-    link: "#"
+    title: "UI/UX Training",
+    issuer: "Cipher Schools",
+    date: "Dec 2025",
+    image: "https://imgs.search.brave.com/GOXQamerL5IJ1Ro47ZTqtXuF3TFFVR0iGRc1JM6FD9c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi91aS11/eC1kZXNpZ24tZGV2/ZWxvcG1lbnQtY29u/Y2VwdC1sYXB0b3At/c2NyZWVuLWlzb2xh/dGVkLWNvbXB1dGVy/LXdoaXRlLWJhY2tn/cm91bmQtYWxsLWNv/bnRlbnQtZGVzaWdu/ZWQtbWUtMTQwOTc2/MTQzLmpwZw?q=80&w=2070&auto=format&fit=crop",
+    link: "https://www.cipherschools.com/certificate/preview?id=68918eaecec61f8eee56677c"
   },
   {
     title: "Full-Stack Web Development",
     issuer: "Coursera / Meta",
     date: "May 2023",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop",
-    link: "#"
+    image: "https://imgs.search.brave.com/9uy4XrMI2LCgTrbzMtRGcbKgJWEcQW3Joo35CNOijiY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/cmlidXRlLmZyZWVj/b2RlY2FtcC5vcmcv/aW1hZ2VzL2JyYW5k/aW5nL2Jhbm5lci5w/bmc?q=80&w=2072&auto=format&fit=crop",
+    link: "https://drive.google.com/file/d/14S38-qmVss8TGX9VR1OnXiTJ7yVro6I8/view"
   },
   {
     title: "Advanced React Patterns",
     issuer: "Frontend Masters",
     date: "Dec 2023",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop",
-    link: "#"
+    image: "https://imgs.search.brave.com/0M8eqxev1q9bHx9FIl-gNAoNmnj0apVgjYmMBFgAT70/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODIw/NDQ5NDcyL3Bob3Rv/L2J1c2luZXNzLXBy/ZXNlbnRhdGlvbi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/Nm5fVGR4anVwRDIx/a0R5aEItQkdHZjRh/U1pXRnl5eGRSRWxY/R0tVYzFwVT0?q=80&w=2070&auto=format&fit=crop",
+    link: "https://drive.google.com/file/d/1KEVZi7NmOJulAIC0ZrPfqd5GbPKcQedU/view"
   }
 ];
 
@@ -47,12 +47,12 @@ const Certificates: React.FC = () => {
             className="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 hover:border-emerald-500/30 transition-colors shadow-2xl hover:shadow-emerald-500/10"
           >
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-900/90 to-transparent z-10 pointer-events-none" />
-            <img 
-              src={cert.image} 
-              alt={cert.title} 
+            <img
+              src={cert.image}
+              alt={cert.title}
               className="w-full h-56 object-cover opacity-50 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 blur-[2px] group-hover:blur-none"
             />
-            
+
             <div className="absolute bottom-0 left-0 w-full p-6 z-20">
               <div className="flex items-center gap-2 mb-2 opacity-80">
                 <Award className="w-4 h-4 text-emerald-400" />
@@ -65,17 +65,17 @@ const Certificates: React.FC = () => {
                 <span className="text-xs font-medium border border-white/10 bg-white/5 rounded-full px-3 py-1.5 text-zinc-300 backdrop-blur-md">
                   {cert.date}
                 </span>
-                <a 
-                  href={cert.link} 
-                  target="_blank" 
-                  rel="noreferrer" 
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noreferrer"
                   className="w-10 h-10 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400 group-hover:bg-emerald-500 group-hover:text-zinc-950 group-hover:border-emerald-500 transition-all hover:scale-110"
                 >
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
             </div>
-            
+
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-500/0 to-transparent group-hover:via-emerald-500/50 transition-all duration-500 z-30" />
             <div className="absolute top-0 right-0 w-[1px] h-full bg-gradient-to-b from-transparent via-emerald-500/0 to-transparent group-hover:via-emerald-500/30 transition-all duration-500 z-30" />
             <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-500/0 to-transparent group-hover:via-emerald-500/50 transition-all duration-500 z-30" />
